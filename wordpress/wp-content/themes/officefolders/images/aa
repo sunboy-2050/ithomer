@@ -1,0 +1,1000 @@
+   15  ll /home/
+   16  ll
+   17  mkdir work
+   18  ll
+   19  mkdir data
+   20  ll
+   21  mount /dev/
+   22  mount /dev/xvdb /home/data
+   23  mk.exts /dev/xvdb 
+   24  mk.ext3 /dev/xvdb 
+   25  mkfs.ext3 /dev/xvdb 
+   26  df -h
+   27  mount /dev/xvdb /home/data
+   28  ll
+   29  pwd
+   30  mv work/ /home/
+   31  mv data/ /home/
+   32  ll
+   33  cd /
+   34  ll
+   35  cd home/
+   36  ll
+   37  mount /dev/xvdb /home/data
+   38  ll
+   39  df -h
+   40  cd /home/data/
+   41  ll
+   42  vim intest.sh
+   43  sh intest.sh 
+   44  yanggang
+   45  df -h
+   46  df -hm
+   47  reboot
+   48  yanggang
+   49  ll
+   50  cd /home/
+   51  ll
+   52  df -hm
+   53  rm -rf work/test 
+   54  df -hm
+   55  ll work/
+   56  df -h
+   57  mount /dev/xvdb /home/data/
+   58  df -h
+   59  df -hm
+   60  rm -rf data/test 
+   61  df -hm
+   62  cd data/
+   63  ll
+   64  rz
+   65  yum install lrzsz
+   66  yum install p7zip
+   67  yum install -y p7zip
+   68  wget http://nchc.dl.sourceforge.net/project/p7zip/p7zip/9.20.1/p7zip_9.20.1_src_all.tar.bz2
+   69  rz
+   70  tar -jxvf p7zip_9.20.1_src_all.tar.bz2 
+   71  cd p7zip_9.20.1
+   72  ll
+   73  make;make install
+   74  make
+   75  uname -a
+   76  cat /etc/issue
+   77  yum install httpd httpd-devel 
+   78  /etc/init.d/httpd start 
+   79  cd /var/www/html/
+   80  ll
+   81  vim info.php
+   82  ifconfig
+   83  yum install php php-mysql php-common php-gd php-mbstring php-mcrypt php-devel php-xml 
+   84  yum install -y php php-mysql php-common php-gd php-mbstring php-mcrypt php-devel php-xml 
+   85  /etc/init.d/httpd start 
+   86  /etc/init.d/httpd restart 
+   87  php -v
+   88  rpm --import http://repo.webtatic.com/yum/RPM-GPG-KEY-webtatic-andy
+   89  wget -P /etc/yum.repos.d/ http://repo.webtatic.com/yum/webtatic.repo
+   90  yum --enablerepo=webtatic update php 
+   91  php -v
+   92  yum --enablerepo=remi,remi-php55 install php-pecl-apc php-cli php-pear php-pdo php-mysqlnd php-pgsql php-pecl-mongo php-sqlite php-pecl-memcache php-pecl-memcached php-gd php-mbstring php-mcrypt php-xml
+   93  yum -y --enablerepo=remi,remi-php55 install php-pecl-apc php-cli php-pear php-pdo php-mysqlnd php-pgsql php-pecl-mongo php-sqlite php-pecl-memcache php-pecl-memcached php-gd php-mbstring php-mcrypt php-xml
+   94  yum --enablerepo=remi,remi-php55 install php-opcache
+   95  yum list installed | grep -i mysql
+   96  yum remove mysql mysql-*
+   97  rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
+   98  rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+   99  yum --enablerepo=remi,remi-test install mysql mysql-server
+  100  mysql -V
+  101  php -v
+  102  yum --enablerepo=remi,remi-php55 install php-opcache
+  103  php -v
+  104  /etc/init.d/httpd resatrt
+  105  /etc/init.d/httpd restart
+  106  rpm -qa | grep httpd*
+  107  man rpm
+  108  yum list installed httpd
+  109  yum update httpd
+  110  vim /etc/yum.repos.d/centalt.repo
+  111  yum update httpd
+  112  /etc/init.d/httpd restart
+  113  /etc/init.d/httpd start
+  114  reboot
+  115  yanggang
+  116  /etc/init.d/httpd start
+  117  httpd -v
+  118  mysql -uroot
+  119  /etc/init.d/mysqld start
+  120  mysql -uroot
+  121  8fd65e4413
+  122  8fd65e4413 -p
+  123  mysql -uroot -pYh_2050
+  124  mysql -uithomer -pYh_2050
+  125  ifconfig
+  126  ll
+  127  cd ~
+  128  ll
+  129  mkdir script
+  130  vim mount_data_disk.sh
+  131  chmod +x mount_data_disk.sh 
+  132  ./mount_data_disk.sh 
+  133  df -h
+  134  vim mount_data_disk.sh
+  135  ./mount_data_disk.sh 
+  136  df -h
+  137  vim mount_data_disk.sh
+  138  ./mount_data_disk.sh 
+  139  vim mount_data_disk.sh 
+  140  ./mount_data_disk.sh 
+  141  ll
+  142  cd /home/data/
+  143  ll
+  144  mkdir mysql
+  145  mkdir python
+  146  ll
+  147  mv jirabugs.sql mysql/
+  148  ll
+  149  vim intest.sh 
+  150  ll
+  151  mysql -uroot -pYh_2050
+  152  yanggang
+  153  cd /home/data/
+  154  ll
+  155  mysql -uithomer -pYh_2050 jirabugs < mysql/jirabugs.sql 
+  156  ll
+  157  ll -lh mysql/
+  158  ll
+  159  mkdir deme
+  160  mv deme demo
+  161  ll
+  162  cd demo/
+  163  ll
+  164  rz
+  165  ll
+  166  7za e images_load_animation.7z 
+  167  yum install -y 7zip
+  168  cd ../7
+  169  ll
+  170  cd ..
+  171  ll
+  172  cd p7zip_9.20.1
+  173  ll
+  174  man rar
+  175  yum install -y rar
+  176  make
+  177  yum install g++
+  178  yum install gcc-c++
+  179  yum install -y gcc-c++
+  180  make
+  181  make install
+  182  cd ..
+  183  ll
+  184  cd demo/
+  185  ll
+  186  7za e images_load_animation.7z 
+  187  ll
+  188  cd ..
+  189  ll
+  190  cd demo/
+  191  ll
+  192  rm -rf *.png
+  193  rm -rf *.html
+  194  ll
+  195  rm -rf *.html
+  196  rm -rf *.js
+  197  rm -rf *.jpg
+  198  ll
+  199  man rm
+  200  ll
+  201  ll images_load_animation
+  202  man 7za
+  203  ll
+  204  mv images_load_animation.7z ..
+  205  ll
+  206  rm -rf *
+  207  ll
+  208  mv ../images_load_animation.7z .
+  209  7za images_load_animation.7z -o images_load_animation
+  210  7za e images_load_animation.7z -o images_load_animation
+  211  ll
+  212  mkdir images_load_animation
+  213  7za e images_load_animation.7z -o images_load_animation
+  214  ll
+  215  ll images_load_animation
+  216  cd images_load_animation
+  217  ll
+  218  cp ../images_load_animation.7z .
+  219  ll
+  220  7za e images_load_animation.7z 
+  221  ll
+  222  rm -rf images_load_animation.7z 
+  223  ll
+  224  ll images_load_animation/
+  225  rm -rf images_load_animation/
+  226  ll
+  227  cd ..
+  228  ll
+  229  cp -r images_load_animation /var/www/html/demo/
+  230  ll
+  231  cd /var/www/html/demo/images_load_animation/
+  232  ll
+  233  ll images
+  234  cd ..
+  235  ll
+  236  rm -rf *
+  237  ll
+  238  pwd
+  239  ll
+  240  rm -rf *
+  241  ll
+  242  cp -r /home/data/demo/loadimages .
+  243  ll
+  244  ll loadimages/
+  245  ll
+  246  cd loadimages/
+  247  ll
+  248  vim index.html 
+  249  ll
+  250  cd ..
+  251  ll
+  252  cd ..
+  253  ll
+  254  cp -r demo/loadimages/ loadimages
+  255  ll
+  256  cd loadimages/
+  257  ll
+  258  chmod -R 755 *
+  259  ll
+  260  cd ..
+  261  ll
+  262  chmod -R 755 demo/loadimages/
+  263  ll
+  264  rm -rf loadimages/
+  265  ll
+  266  cd demo/
+  267  ll
+  268  vim index.html
+  269  ll
+  270  l
+  271  ll
+  272  vim index.html 
+  273  ll
+  274  mv AdminDemo/ admindemo
+  275  ll
+  276  vim index.html 
+  277  ll
+  278  pwd
+  279  ll
+  280  yum install unrar
+  281  pwd
+  282  cd /home/data/
+  283  ll
+  284  wget http://pkgs.repoforge.org/unrar/unrar-4.0.7-1.el6.rf.x86_64.rpm
+  285  rpm -Uvh unrar-4.0.7-1.el6.rf.x86_64.rpm 
+  286  man unrar
+  287  wget http://pkgs.repoforge.org/rar/rar-3.8.0-1.el6.rf.x86_64.rpm
+  288  man rpm
+  289  rpm -Uvh rar-3.8.0-1.el6.rf.x86_64.rpm 
+  290  man rar
+  291  man unrar
+  292  ll
+  293  q
+  294  ll
+  295  rz
+  296  ll
+  297  cp 1.vimrc ~/.vimrc
+  298  ll
+  299  yanggang
+  300  ll
+  301  cd /var/www/html/
+  302  ll
+  303  mkdir demo
+  304  cd demo/
+  305  ll
+  306  rz
+  307  cd ..
+  308  ll
+  309  cd /home/work/
+  310  ll
+  311  cd ../data/
+  312  ll
+  313  wget http://www.rarlab.com/rar/rarlinux-4.1.b5.tar.gz
+  314  yum install make gcc gcc-c++
+  315  ll
+  316  cd demo/
+  317  ll
+  318  ll images_load_animation
+  319  rm -rf images_load_animation
+  320  ll
+  321  mkdir loadimages
+  322  7za -e images_load_animation.7z -o loadimages/
+  323  man 7za
+  324  7za ex images_load_animation.7z o loadimages/
+  325  7za e images_load_animation.7z o loadimages/
+  326  ll loadimages/
+  327  7za x images_load_animation.7z o loadimages/
+  328  7za x images_load_animation.7z -o loadimages/
+  329  7za e images_load_animation.7z -o loadimages/
+  330  7za e images_load_animation.7z -o loadimages
+  331  ll loadimages/
+  332  cp loadimages/
+  333  cp images_load_animation.7z loadimages/ && cd loadimages/
+  334  ll
+  335  7za x images_load_animation.7z 
+  336  ll
+  337  ll images_load_animation
+  338  cd ..
+  339  ll
+  340  cd loadimages/
+  341  ll
+  342  rm images_load_animation.7z 
+  343  ll
+  344  cp -rf images_load_animation/* .
+  345  ll
+  346  rm -rf images_load_animation/
+  347  ll
+  348  cd ..
+  349  ll
+  350  df -h
+  351  df -hm
+  352  ll
+  353  sz
+  354  rz
+  355  ll
+  356  tar zxvf admindemo.tar.gz 
+  357  ll
+  358  ll AdminDemo/
+  359  cp -r AdminDemo/ /var/www/html/demo/
+  360  ll
+  361  cd ..
+  362  ll
+  363  cd mysql/
+  364  ll
+  365  sz
+  366  rz
+  367  ll
+  368  tar zxvf ithomer_blog.tar.gz 
+  369  ll
+  370  cd ithomer_blog
+  371  ll
+  372  mysql -uithomer -pYh_2050 ithomer < wordpress_bk_20140226_1110.sql 
+  373  vim /etc/my.cnf 
+  374  /etc/init.d/mysqld restart
+  375  mysql -uithomer -pYh_2050 ithomer < wordpress_bk_20140226_1110.sql 
+  376  vim /etc/my.cnf 
+  377  /etc/init.d/mysqld restart
+  378  mysql -uithomer -pYh_2050 ithomer < wordpress_bk_20140226_1110.sql 
+  379  mysql -uroot -pYh_2050 ithomer < wordpress_bk_20140226_1110.sql 
+  380  ll
+  381  mysql -uroot -pYh_2050 ithomer < wordpress_bk_20140226_1110.sql 
+  382  vim /etc/my.cnf 
+  383  /etc/init.d/mysqld restart
+  384  mysql -uroot -pYh_2050 ithomer < wordpress_bk_20140226_1110.sql 
+  385  vim wordpress_bk_20140226_1110.sql +579
+  386  ll
+  387  ll wordpress
+  388  ll
+  389  cp -r wordpress /var/www/html/
+  390  ll
+  391  vim /var/www/html/wordpress/wp-config.php 
+  392  mysql -uroot -pYh_2050 wordpress < wordpress_bk_20140226_1110.sql 
+  393  /etc/init.d/mysqld restart
+  394  /etc/init.d/httpd restart
+  395  reboot
+  396  ll
+  397  yanggang
+  398  df -h
+  399  ll ~/script/
+  400  ll
+  401  mv mount_data_disk.sh script/
+  402  ll
+  403  ~/script/mount_data_disk.sh 
+  404  cd ~/script/
+  405  ll
+  406  vim mysql_start.sh
+  407  ll
+  408  chmod +x m
+  409  chmod +x mysql_start.sh 
+  410  ./mysql_start.sh 
+  411  cp mysql_start.sh apache_start.sh
+  412  vim apache_start.sh 
+  413  ./apache_start.sh 
+  414  ll -l
+  415  vim mysql_start.sh 
+  416  ll
+  417  ./mysql_start.sh stop
+  418  mysql -uroot -pYh_2050
+  419  ./mysql_start.sh start
+  420  mysql -uroot -pYh_2050
+  421  ./mysql_start.sh restart
+  422  vim mysql_start.sh 
+  423  ./mysql_start.sh restart
+  424  mysql -uroot -pYh_2050
+  425  mysql help
+  426  8fd65e4413
+  427  man mysql
+  428  mysql status
+  429  ll
+  430  vim apache_start.sh 
+  431  ll
+  432  vim apache_start.sh 
+  433  vim /etc/init.d/httpd 
+  434  /etc/init.d/httpd status
+  435  vim apache_start.sh 
+  436  ./apache_start.sh status
+  437  ./apache_start.sh restart
+  438  vim apache_start.sh 
+  439  ll
+  440  cat mysql_start.sh 
+  441  cat apache_start.sh 
+  442  ll
+  443  df -h
+  444  cd /home/data/
+  445  ll
+  446  cd mysql/
+  447  ll
+  448  mysql -uroot -pYh_2050
+  449  yanggang
+  450  ll
+  451  cd /home/data/
+  452  ll
+  453  cd mysql/
+  454  ll
+  455  mysql -uroot -pYh_2050 jirabugs < jirabugs.sql 
+  456  cp jirabugs.sql /home/work/
+  457  mysql -uroot -pYh_2050 jirabugs < /home/work/jirabugs.sql 
+  458  cd ithomer_blog
+  459  ll
+  460  mysql -uroot -pYh_2050 wordpress < app_wordpress.sql 
+  461  ls -l
+  462  cd /home/work/
+  463  ll
+  464  cd /var/www/html/wordpress
+  465  ll
+  466  vim wp-content/themes/officefolders/header.php 
+  467  vim wp-content/themes/officefolders/footer.php 
+  468  vim analyticstracking.php 
+  469  cd wp-content/plugins/
+  470  ll
+  471  rz
+  472  ll
+  473  unzip copyrightpro.1.6.zip 
+  474  ll
+  475  yanggang
+  476  ll
+  477  df -h
+  478  df -hm
+  479  cd /home/data/
+  480  ll
+  481  rz
+  482  df -hm
+  483  ls -l
+  484  ls -lh
+  485  mkdir wordpress
+  486  mv wordpress-3.8.1-zh_CN.zip  wordpress
+  487  cd wordpress/
+  488  ll
+  489  man unzip
+  490  unzip x wordpress-3.8.1-zh_CN.zip 
+  491  unzip -x wordpress-3.8.1-zh_CN.zip 
+  492  ll
+  493  ll wordpress
+  494  ll /var/www/html/
+  495  cp -r wordpress /var/www/html/wordpress_2
+  496  ifconfig
+  497  vim /etc/php.ini 
+  498  mysql -uroot -pYh_2050
+  499  php -v
+  500  vim /etc/php.ini 
+  501  find / -name mysql
+  502  ll /usr/share/mysql/
+  503  find / -name modules
+  504  find / -name mysql.so
+  505  /etc/php.d/
+  506  vim /etc/php.ini 
+  507  ll
+  508  ls -l /etc/
+  509  vim /etc/php.ini 
+  510  yum --enablerepo=remi,remi-php55 install php-pecl-apc php-cli php-pear php-pdo php-mysqlnd php-pgsql php-pecl-mongo php-sqlite php-pecl-memcache php-pecl-memcached php-gd php-mbstring php-mcrypt php-xml
+  511  yum -y --enablerepo=remi,remi-php55 install php-opcache
+  512  /etc/init.d/httpd restart
+  513  mysql -uroot -pYh_2050
+  514  ll
+  515  cd /var/www/html/wordpress_2/
+  516  ll
+  517  rz
+  518  vim /etc/my.cnf 
+  519  cd ../wordpress
+  520  ll
+  521  mysql -uroot -pYh_2050
+  522  yanggang
+  523  cd /var/www/html/wordpress
+  524  ll
+  525  vim wp-config.php 
+  526  ll
+  527  grep "115.28.229.236" . -r 
+  528  pwd
+  529  ll
+  530  vim wp-config.php 
+  531  grep "115.28.229.236" . -r 
+  532  grep "www.ithomer.net" . -r 
+  533  grep "ithomer.net" . -r 
+  534  grep "115.28.229.236" . -r 
+  535  ll
+  536  ls -a
+  537  ll
+  538  ls -a
+  539  vim .htaccess
+  540  chmod 666 .htaccess 
+  541  find / -name httpd
+  542  find / -name httpd*
+  543  vim /etc/httpd/conf/httpd.conf 
+  544  ll
+  545  cd ..
+  546  ll
+  547  cp -r wordpress wordpress_bk
+  548  cd wordpress
+  549  ll
+  550  chmod -R 777 
+  551  ll
+  552  chmod  777 -R
+  553  chmod  -R 777 *
+  554  ll
+  555  ls 
+  556  ll .htaccess 
+  557  ls -a
+  558  ls -al
+  559  chmod 777 .htaccess 
+  560  ls -al
+  561  vim /etc/httpd/conf/httpd.conf 
+  562  /etc/init.d/httpd restart
+  563  cd wp-admin/
+  564  ll
+  565  cd images/
+  566  ll
+  567  mv wordpress-logo.png wordpress-logo.png_2
+  568  rz
+  569  cd ..
+  570  grep "wordpress-logo.svg" . -r
+  571  cd ..
+  572  ll
+  573  cd ..
+  574  ll
+  575  mv wordpress wordpress_2_chmod_777
+  576  cp -r wordpress_2 wordpress
+  577  ll wordpress
+  578  ll wordpress_2_chmod_777/
+  579  ll
+  580  rm -rf wordpress
+  581  cp wordpress_bk/ wordpress
+  582  cp -r wordpress_bk/ wordpress
+  583  ll
+  584  rm -rf wordpress_2_chmod_777/
+  585  ll
+  586  ll wordpress
+  587  cd wordpress/wp-admin/images/
+  588  ll
+  589  cp w-logo-blue.png w-logo-blue.png_bk
+  590  rz
+  591  ll
+  592  rz
+  593  ll
+  594  ls -l
+  595  rm -f w-logo-blue.png
+  596  ll
+  597  rz
+  598  ll
+  599  mv w-logo-blue.png.png w-logo-blue.png
+  600  ll
+  601  cd ..
+  602  ll
+  603  cd ..
+  604  vim wp-login.php 
+  605  grep "wordpress-logo.svg" . -r
+  606  grep "w_logo_blue.png" . -r
+  607  ll wp-admin/images/
+  608  grep "w-logo-blue.png" . -r
+  609  vim ./wp-admin/css/install-rtl.css
+  610  ll wp-admin/images/
+  611  sz wp-admin/images/w-logo-blue.png
+  612  pwd
+  613  ll
+  614  vim ./wp-admin/css/install-rtl.css
+  615  grep "login h1 a" . -r
+  616  grep "login h1 a" . -r > aaa
+  617  vim aaa 
+  618  vim ./wp-admin/css/wp-admin.css
+  619  vim ./wp-admin/css/install-rtl.css
+  620  vim ./wp-admin/css/wp-admin.css
+  621  vim aaa 
+  622  vim wp-admin/css/wp-admin.min.css 
+  623  vim wp-login.php 
+  624  ll
+  625  tracert www.baidu.com
+  626  traceroute www.baidu.com
+  627  yanggang
+  628  ifconfig
+  629  cd /home/data/mysql/ithomer_blog
+  630  ll
+  631  mysql -uroot -pYh_2050 wordpress < wordpress_bk_20140226_1110.sql 
+  632  ll
+  633  mysql -uroot -pYh_2050 wordpress < app_wordpress.sql 
+  634  mysql -uroot -pYh_2050 wordpress < wordpress_bk_20140226_1110.sql 
+  635  find / -name my.*
+  636  vim /etc/my.cnf 
+  637  /etc/init.d/mysqld restart
+  638  mysql -uroot -pYh_2050 wordpress < wordpress_bk_20140226_1110.sql 
+  639  ll
+  640  mysqldump -uroot -pYh_2050 wordpress > wordpress_bk_20140306_1916.sql
+  641  ll
+  642  ll wordpress
+  643  ll
+  644  cp -r /var/www/html/wordpress wordpress_bk_20140306_1917_115.29.237.28
+  645  ll
+  646  vim /etc/my.cnf 
+  647  history
+  648  ll
+  649  cp -r /var/www/html/wordpress wordpress_20140306_115.29.237.28
+  650  ll
+  651  rpm -qa
+  652  man rpm
+  653  rpm -qa | grep vsftpd
+  654  yum -y install vsftd
+  655  yum -y install vsftpd
+  656  chkconfig vsftpd on
+  657  /etc/init.d/vsftpd start
+  658  vim ~/script/mysql_start.sh 
+  659  cp ~/script/mysql_start.sh ~/script/ftp_start.sh
+  660  vim ~/script/ftp_start.sh 
+  661  ll
+  662  vim /etc/vsftpd/vsftpd.conf 
+  663  cat /etc/issue
+  664  vim /etc/sysconfig/iptables-config 
+  665  vim /etc/vsftpd/vsftpd.conf 
+  666  ll /home/data/
+  667  mkdir /home/data/FTP
+  668  mkdir /home/data/FTP/ftpuser
+  669  useradd -d /home/data/FTP/ftpuser -g ftp -s /sbin/nologin ftpuser
+  670  passwd ftpuser
+  671  vim /etc/vsftpd/chroot_list
+  672  service vsftpd restart
+  673  ll
+  674  cd /home/data/FTP/
+  675  ll
+  676  cd /home/data/FTP/ftpuser/
+  677  vim /etc/vsftpd/chroot_list
+  678  yum -y install traceroute
+  679  traceroute www.baidu.com
+  680  ifconfig
+  681  ps -ef | grep vsftpd
+  682  ll
+  683  pwd
+  684  cd ../..
+  685  ll
+  686  cd mysql/
+  687  ll
+  688  ll ithomer_blog
+  689  ll
+  690  df -h
+  691  vim /etc/vsftpd/vsftpd.conf 
+  692  vim /etc/passwd
+  693  su ftpuser
+  694  passwd ftpuser
+  695  vim /etc/vsftpd/chroot_list 
+  696  service vsftpd restart
+  697  cd ../FTP/ftpuser/
+  698  pwd
+  699  vim /etc/vsftpd/vsftpd.conf 
+  700  /etc/init.d/vsftpd restart
+  701  vim /etc/vsftpd/vsftpd.conf 
+  702  yum install db4 db4-utils
+  703  vim /etc/vsftpd/vuser_passwd.txt
+  704  yum install db4 db4-utils
+  705  db_load -T -t hash -f /etc/vsftpd/vuser_passwd.txt /etc/vsftpd/vuser_passwd.db
+  706  ll /etc/vsftpd/
+  707  mkdir /etc/vsftpd/vuser_conf
+  708  vim /etc/vsftpd/vuser_conf/test
+  709  mkdir /home/data/FTP/DATA
+  710  setsebool -P ftp_home_dir=1   
+  711  yum install setsebool
+  712  yum install sersebool
+  713  setsebool 
+  714  setsebool -P ftp_home_dir=1   
+  715  ll /var/log/
+  716  vim /var/log/vsftpd.log 
+  717  ll /var/log/
+  718  ftp
+  719  service iptables stop
+  720  service iptables start
+  721  service iptables status
+  722  service iptables start
+  723  service iptables status
+  724  ftp localhost
+  725  ll /home/data/FTP/
+  726  ll /home/data/FTP/DATA/
+  727  find / -name pub
+  728  cd /var/ftp/pub/
+  729  ll
+  730  cd ..
+  731  ll
+  732  echo "test ftp" >> test.txt
+  733  ll
+  734  /etc/init.d/vsftpd restart
+  735  ll /home/data/FTP/
+  736  ll /home/data/FTP/DATA/
+  737  ll /home/data/FTP/ftpuser/
+  738  pwd
+  739  ll
+  740  vim /etc/vsftpd/vsftpd.conf 
+  741  /etc/init.d/vsftpd restart
+  742  vim /etc/vsftpd/vsftpd.conf 
+  743  /etc/init.d/vsftpd restart
+  744  vim /etc/vsftpd/vsftpd.conf 
+  745  /etc/init.d/vsftpd restart
+  746  vim /etc/vsftpd/vsftpd.conf 
+  747  /etc/init.d/vsftpd restart
+  748  ftp
+  749  yum install ftp
+  750  ftp
+  751  ftp localhost
+  752  yum install ftp
+  753  ftp localhost
+  754  ifconfig
+  755  ftp 115.29.237.28
+  756  vim /etc/vsftpd/vsftpd.conf 
+  757  vim /etc/sysconfig/iptables-config 
+  758  vim /etc/vsftpd/vsftpd.conf 
+  759  /etc/init.d/vsftpd restart
+  760  vim /etc/vsftpd/vsftpd.conf 
+  761  /etc/init.d/vsftpd restart
+  762  ll /home/data/FTP/ftpuser/
+  763  vim /etc/passwd
+  764  useradd -d /home/data/FTP/ftpuser -g ftp -s /sbin/nologin ftpuser
+  765  userdel ftpuser
+  766  vim /etc/passwd
+  767  useradd -d /home/data/FTP/ftpuser -g ftp -s /sbin/nologin ftpuser
+  768  vim /etc/passwd
+  769  userdel ftpuser
+  770  vim /etc/passwd
+  771  rm -rf /home/data/FTP/ftpuser
+  772  vim /etc/passwd
+  773  useradd -d /home/data/FTP/ftpuser -g ftp -s /sbin/nologin ftpuser
+  774  ll /var/spool/mail/
+  775  rm -rf /var/spool/mail/ftpuser 
+  776  userdel ftpuser
+  777  rm -rf /home/data/FTP/ftpuser/
+  778  useradd -d /home/data/FTP/ftpuser -g ftp -s /sbin/nologin ftpuser
+  779  /etc/init.d/vsftpd restart
+  780  vim /etc/vsftpd/vsftpd.conf 
+  781  vim /etc/vsftpd/chroot_list 
+  782  q
+  783  passwd ftpuser
+  784  su ftpuser
+  785  su -s ftpuser
+  786  vim /etc/vsftpd/vsftpd.conf 
+  787  /etc/init.d/vsftpd restart
+  788  chkconfig vsftpd on
+  789  chkconfig 
+  790  chkconfig mysqld on
+  791  chkconfig httpd on
+  792  chkconfig 
+  793  reboot
+  794  yanggang
+  795  mysql -uroot -pYh_2050
+  796  vim badu.py
+  797  python badu.py 
+  798  vim badu.py
+  799  python badu.py 
+  800  vim badu.py
+  801  python badu.py 
+  802  vim badu.py
+  803  python badu.py 
+  804  vim badu.py
+  805  python badu.py 
+  806  vim badu.py
+  807  python badu.py 
+  808  vim badu.py
+  809  python badu.py 
+  810  vim badu.py
+  811  sz badu.py 
+  812  vim /etc/vsftpd/vsftpd.conf 
+  813  /etc/init.d/vsftpd restart
+  814  cd /etc/vsftpd/
+  815  ll
+  816  rm vuser_passwd.txt 
+  817  rm vuser_passwd.db 
+  818  ll
+  819  vim ftpusers 
+  820  ll
+  821  vi vuser_conf/test 
+  822  ll
+  823  rm -rf vuser_conf/
+  824  ll
+  825  /etc/init.d/vsftpd restart
+  826  yum remove vsftpd
+  827  sudo yum install vsftpd
+  828  yum install ftp
+  829  vi /etc/vsftpd/vsftpd.conf
+  830  vim /etc/vsftpd/vsftpd.conf
+  831  cp /etc/vsftpd/vsftpd.conf /etc/vsftpd/vsftpd.conf_bk
+  832  vim /etc/vsftpd/vsftpd.conf
+  833  service vsftpd restart
+  834  chkconfig vsftpd on
+  835  ftp localhost
+  836  ll /var/ftp/
+  837  vim /etc/vsftpd/vsftpd.conf
+  838  service vsftpd restart
+  839  vim /etc/vsftpd/vsftpd.conf
+  840  ll
+  841  ll /var/spool/mail/
+  842  rm /var/spool/mail/ftpuser 
+  843  ll /var/spool/mail/
+  844  mkdir /home/data/FTP
+  845  vim /etc/passwd
+  846  userdel ftpuser
+  847  vim /etc/passwd
+  848  ll
+  849  useradd -d /home/data/FTP/ftpuser -g ftp -s /sbin/nologin ftpuser
+  850  passwd ftpuser
+  851  vim /etc/vsftpd/chroot_list 
+  852  service vsftpd restart
+  853  vim /etc/vsftpd/vsftpd.conf
+  854  ftp
+  855  ll
+  856  ftp
+  857  reboot
+  858  yanggang
+  859  /etc/init.d/vsftpd restart
+  860  ftp
+  861  vim /etc/vsftpd/vsftpd.conf
+  862  /etc/init.d/vsftpd restart
+  863  ftp
+  864  vim /etc/vsftpd/vsftpd.conf
+  865  /etc/init.d/vsftpd restart
+  866  ftp
+  867  vim /etc/vsftpd/vsftpd.conf
+  868  /etc/init.d/vsftpd restart
+  869  ftp
+  870  vim /etc/vsftpd/vsftpd.conf
+  871  /etc/init.d/vsftpd restart
+  872  ftp
+  873  vim /etc/vsftpd/vsftpd.conf
+  874  /etc/init.d/vsftpd restart
+  875  ftp
+  876  cd /var/ftp/
+  877  ll
+  878  vim /etc/vsftpd/chroot_list 
+  879  /etc/init.d/vsftpd restart
+  880  ftp
+  881  vim /etc/vsftpd/vsftpd.conf
+  882  /etc/init.d/vsftpd restart
+  883  ll
+  884  cp test.txt /home/data/FTP/
+  885  cp test.txt /home/data/FTP/ftpuser/
+  886  cd /home/data/FTP/
+  887  ll
+  888  mv test.txt test_FTP.txt 
+  889  cd ftpuser/
+  890  ll
+  891  mv test.txt test_ftpuser.txt 
+  892  ll
+  893  vim /etc/vsftpd/vsftpd.conf
+  894  ll
+  895  cd .
+  896  cd ..
+  897  ll
+  898  cd ftpuser/
+  899  ll
+  900  mkdir -R 755 *
+  901  chmod -R 755 *
+  902  ll
+  903  ll /var/ftp/
+  904  ll /var/ftp/pub/
+  905  ll ..
+  906  ll /var/www/html/wordpress/wp-content/plugins/
+  907  vim /etc/vsftpd/vsftpd.conf
+  908  /etc/init.d/vsftpd restart
+  909  find / -name 'jiathis.1.1.zip'
+  910  find / -name 'jiathis*'
+  911  ps -ef | grep httpd
+  912  chown apache:apache -R /var/www/html/wordpress
+  913  df -h
+  914  df -hm
+  915  cd /home/data/FTP/
+  916  vim ~/script/mount_data_disk.sh 
+  917  ll
+  918  vm /home/data /home/data_bk
+  919  mv /home/data /home/data_bk
+  920  ll
+  921  ll /home/
+  922  ~/script/mount_data_disk.sh 
+  923  mkdir /home/data
+  924  ~/script/mount_data_disk.sh 
+  925  ll
+  926  cp /home/data_bk/* /home/data/
+  927  cp -r /home/data_bk/* /home/data/
+  928  cp -rf /home/data_bk/* /home/data/
+  929  ll
+  930  ll /home/data
+  931  df -h
+  932  df -hm
+  933  ll
+  934  cd /home/
+  935  ll
+  936  rm -rf data_bk/
+  937  ll
+  938  df -hm
+  939  history
+  940  cd /var/www/html/
+  941  cd wordpress
+  942  ll
+  943  grep '正在执行例行维护' . -r
+  944  vim wp-content/languages/zh_CN.po 
+  945  vim /etc/vsftpd/vsftpd.conf
+  946  cat /etc/vsftpd/vsftpd.conf
+  947  vim wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css
+  948  vim wp-content/plugins/auto-syntaxhighlighter/SyntaxHighlighter/build/styles/shCore-min.css
+  949  vim /etc/vsftpd/chroot_list 
+  950  ll
+  951  vim /etc/vsftpd/vsftpd.conf
+  952  vim /etc/vsftpd.chroot_list
+  953  /etc/init.d/vsftpd restart
+  954  vim /etc/vsftpd/vsftpd.conf
+  955  /etc/init.d/vsftpd restart
+  956  vim /etc/vsftpd/vsftpd.conf
+  957  /etc/init.d/vsftpd restart
+  958  chkconfig vsftpd on
+  959  chkconfig
+  960  yum install phpMyAdmin
+  961  cd /home/data/
+  962  ll
+  963  wget http://sourceforge.net/projects/phpmyadmin/files/phpMyAdmin/4.1.9/phpMyAdmin-4.1.9-all-languages.tar.gz
+  964  ll
+  965  curl www.epochtimes.com
+  966  cat /etc/issue
+  967  php -v
+  968  mysql -V
+  969  ll
+  970  tar zxvf phpMyAdmin-4.1.9-all-languages.tar.gz 
+  971  cd phpMyAdmin-4.1.9-all-languages
+  972  ll
+  973  ls
+  974  cp config.sample.inc.php config.inc.php 
+  975  vim config.inc.php 
+  976  ll
+  977  cd ..
+  978  ll
+  979  cp phpMyAdmin-4.1.9-all-languages.tar.gz /var/www/html/
+  980  cd /var/www/html/
+  981  ll
+  982  tar zxvf phpMyAdmin-4.1.9-all-languages.tar.gz 
+  983  ll
+  984  rm -f phpMyAdmin-4.1.9-all-languages
+  985  rm -f phpMyAdmin-4.1.9-all-languages.tar.gz 
+  986  ll
+  987  mv phpMyAdmin-4.1.9-all-languages/ phpmyadmin
+  988  ll
+  989  cd phpmyadmin/
+  990  ll
+  991  cp config.sample.inc.php config.inc.php 
+  992  cd /home/data/
+  993  ll
+  994  rm -rf phpMyAdmin-4.1.9-all-languages
+  995  ll
+  996  cd /var/www/html/
+  997  history
+  998  cd wordpress/wp-content/themes/officefolders/images/
+  999  ll
+ 1000  rz
+ 1001  pwd
+ 1002  cd ../../../plugins/mobilepress/themes/default/img/
+ 1003  ll
+ 1004  sz favicon.ico 
+ 1005  pwd
+ 1006  cd /var/www/html/demo/
+ 1007  ll
+ 1008  vim index.html 
+ 1009  cd ../wordpress
+ 1010  ll
+ 1011  cd wp-content/themes/officefolders/images/
+ 1012  ll
+ 1013  history
+ 1014  history > aa

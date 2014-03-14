@@ -1,0 +1,11 @@
+/*comment-digg*/
+.fL					{float:left}
+.fR					{float:right}
+.clearfix:after 	{content: ".";display: block;height: 0;clear: both;visibility: hidden}
+.clearfix 			{display: inline-block}
+* html .clearfix 	{height: 1%}
+.clearfix 			{display: block}
+.cd-wrapper{cursor:default;font-size:12px;font-family:Venderna;margin:7px 6px 4px}
+a.cd-votebtn{padding:2px;cursor:pointer}
+span.cd-votebtn{padding:2px;color:#333}
+.cd-votebar{padding:4px 8px 0 8px}
